@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About US</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+
+        *{
+            margin:0;
+            padding: 0;
+            background-size: 400px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 60px 60px 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            grid-template-areas: 
+            "title title title title"
+            ". sidebar sidebar ."
+            ". video video video"
+            "content content content content"
+            "footer footer footer footer";
+        }  
+
+        .grid div:nth-child(even) {
+                background-color: rgb(255, 255, 255);
+            }
+         .grid div:nth-child(odd) {
+                background-color:rgb(242, 235, 246);
+            }
+
+            .title{
+                grid-area: title;
+
+            }
+            .sidebar{
+                grid-area: sidebar;
+            }
+            .video{
+                grid-area: video;
+            }
+            .content{
+                grid-area: content;
+            }
+            .footer{
+                grid-area: footer;
+            }
+        
+        
+    </style>
+</head>
+<body>
+
+
+        <div class="grid">
+            <div class="title">SEE IT IN ACTION</div>
+            <div class="sidebar">
+                <h2>play the video below</h2></div>
+            <div class="video">
+
+            <video width="420" height="340" src="glow-presentation.mp4" poster="skin-tone.jpg" controls> 
+            
+            width="100%" </video>
+
+            </div>
+            <div class="content">
+
+                <section class="benefits">
+                    <div class="container">
+                        <div class="section-title">
+                            <h2>Why Choose GlowSkin?</h2>
+                        </div>
+                        <div class="benefits-grid">
+                            <div class="benefit-card">
+                                <div class="benefit-icon">
+                                    <i class="fas fa-leaf"></i>
+                                </div>
+                                <h3>Natural Ingredients</h3>
+                                <p>Formulated with 100% organic botanicals, free from parabens, sulfates, and synthetic fragrances.</p>
+                            </div>
+                            <div class="benefit-card">
+                                <div class="benefit-icon">
+                                    <i class="fas fa-spa"></i>
+                                </div>
+                                <h3>Deep Hydration</h3>
+                                <p>Our advanced formula provides 72-hour moisture retention for soft, supple skin.</p>
+                            </div>
+                            <div class="benefit-card">
+                                <div class="benefit-icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <h3>Dermatologist Tested</h3>
+                                <p>Clinically proven to be safe for all skin types, including sensitive skin.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+            </div>
+            <div class="footer">
+                <div class="container">
+                    <div class="footer-content">
+                        <div class="footer-column">
+                            <h3>GlowSkin</h3>
+                            <p>Premium skincare products crafted with nature and science to reveal your most radiant skin.</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                            </div>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Quick Links</h3>
+                            <a href="index.html">Home</a>
+                            <a href="Product.html">Products</a>
+                            <a href="About.html">About Us</a>
+                            <a href="Testimonial.html">Testimonials</a>
+                        </div>
+                        <div class="footer-column">
+                            <h3>Contact Us</h3>
+                            <p><i class="fas fa-map-marker-alt"></i> No 26 Gwegwe Yenagoa, Bayelsa</p>
+                            <p><i class="fas fa-phone"></i> (234) 815-3609-048</p>
+                            <p><i class="fas fa-envelope"></i> info@glowskin.com</p>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <p>&copy; 2025 GlowSkin. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>
+</html>

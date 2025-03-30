@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product</title>
+    <style>
+                .benefits {
+            background: #f9f9f9;
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .benefit-card img{
+            width: 100px;
+            background-size: cover;
+
+            
+        }
+        
+        .benefit-card {
+            background: var(--light);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .benefit-icon {
+            font-size: 3rem;
+            color: var(--accent);
+            margin-bottom: 20px;
+        }
+        
+        .benefit-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <section class="benefits">
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose GlowSkin?</h2>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="benefit-card img">
+                        <img src="img/testimonial.jpg" alt="my testimonial">
+                    </div>
+                    <h3>Natural Ingredients</h3>
+                    <p>Formulated with 100% organic botanicals, free from parabens, sulfates, and synthetic fragrances.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Deep Hydration</h3>
+                    <p>Our advanced formula provides 72-hour moisture retention for soft, supple skin.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>Dermatologist Tested</h3>
+                    <p>Clinically proven to be safe for all skin types, including sensitive skin.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
